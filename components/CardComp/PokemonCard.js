@@ -7,14 +7,12 @@ export default function PokemonCard({ name, image, type, hp, weakness, moves }) 
 				<Text style={stylesCard.name}>{name}</Text>
 				<Text style={stylesCard.hp}> HP: {hp}</Text>
 			</View>
-			{/* <View> */}
 				<Image
                     style={stylesCard.image}
 					source={image}
                     resizeMode="contain"
 					accessibilityLabel={`${name} Pokemon`}
 				/>
-			{/* </View>  */}
 			<View>
 				<Text>{type}</Text>
 			</View>
